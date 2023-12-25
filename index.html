@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth scroll-pt-32">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Andinny Photo Percetakan dan Studio Photo"
+        content="Percetakan dan Studio terbaik terlengkap dan profesional sejak 2005">
+    <title>Andinny Photo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A2634',
+                        secondary: '#FDF8F1',
+                        gray: '#A7A7A7',
+                        lightgray: '#DBD9D5',
+                    },
+                    fontFamily: {
+                        sans: ['"Work Sans"', 'sans-serif'],
+                        serif: ['"DM Serif Display"', 'serif']
+                    }
+                }
+            },
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="bg-white fixed w-full z-50 top-0 start-0 shadow">
+        <div
+            class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-4 px-8 md:px-16 lg:px-24 2xl:px-24">
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/images/svg/Logo.svg" class="h-14" alt="Andinny Photo Logo">
+            </a>
+            <div class="flex lg:order-2 space-x-3 lg:space-x-0">
+                <button type="button"
+                    class="hidden md:block text-primary font-sans border-2 border-primary hover:bg-primary hover:text-white font-medium text-md xl:text-lg px-4 py-2 text-center transition-all linear duration-700"><a
+                        target="_blank" href="https://wa.me/6285320835586">Hubungi
+                        Kami</a></button>
+                <button data-te-collapse-init data-te-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray rounded-lg lg:hidden">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" data-te-navbar-nav-ref
+                id="navbar" data-te-collapse-item>
+                <button type="button"
+                    class="block md:hidden mt-6 text-primary font-sans border-2 border-primary hover:bg-primary hover:text-white font-medium text-md xl:text-lg px-4 py-2 text-center transition-all linear duration-700"><a
+                        target="_blank" href="https://wa.me/6285320835586">Hubungi
+                        Kami</a></button>
+                <ul class="flex flex-col font-normal font-sans lg:p-0 mt-4 lg:space-x-8 lg:flex-row lg:mt-0">
+                    <li data-te-nav-item-ref>
+                        <a data-te-nav-link-ref href="#tentang-kami"
+                            class="block py-2 px-3 lg:p-0 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Tentang
+                            Kami</a>
+                    </li>
+                    <li data-te-nav-item-ref>
+                        <a data-te-nav-link-ref href="#jasa"
+                            class="block py-2 px-3 lg:p-0 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Jasa</a>
+                    </li>
+                    <li data-te-nav-item-ref>
+                        <a data-te-nav-link-ref href="#galeri"
+                            class="block py-2 px-3 lg:p-0 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Galeri</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section
+        class="max-w-screen-2xl flex flex-col lg:flex-row items-center gap-y-8 justify-center lg:justify-between mx-auto mt-36 mb-36 px-8 md:px-24">
+        <div class="flex justify-center items-start flex-col order-1 gap-6 w-full lg:w-3/5 md:order-0">
+            <p class="font-serif text-4xl lg:text-5xl tracking-wide w-full lg:w-6/12 leading-tight">Melayani Kebutuhan
+                Foto & Cetak
+                Berkualitas Sejak 2005</p>
+            <div class="flex items-center gap-6">
+                <button type="button"
+                    class="max-w-fit text-primary font-sans bg-primary text-white hover:shadow-2xl font-medium text-md xl:text-lg px-4 py-2 text-center transition-all linear duration-700"><a
+                        target="_blank" href="https://wa.me/6285320835586">Hubungi
+                        Kami</a></button>
+                <a href="#galeri" class="text-md xl:text-lg font-sans hover:underline">Lihat Galeri Kami</a>
+            </div>
+        </div>
+        <div id="carousel" class="relative lg:w-6/12 order-0 lg:order-1 space-y-4 lg:px-0 gap-6" data-te-carousel-init
+            data-te-ride="carousel">
+            <div class="relative overflow-hidden after:clear-both after:block after:content-['']">
+                <!--First slide-->
+                <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item data-te-carousel-active>
+                    <img src="/images/png/carousel/Carousel1.png" class="block w-full h-auto max-h-[500px]"
+                        alt="Wild Landscape" />
+                </div>
+                <!--Second slide-->
+                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img src="/images/png/carousel/Carousel2.png" class="block w-full h-auto max-h-[500px]"
+                        alt="Camera" />
+                </div>
+                <!--Third slide-->
+                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img src="/images/png/carousel/Carousel3.png" class="block w-full h-auto max-h-[500px]"
+                        alt="Exotic Fruits" />
+                </div>
+            </div>
+            <div class="flex w-full items-center justify-between">
+                <div class="relative z-10 flex list-none justify-center" data-te-carousel-indicators>
+                    <button type="button" data-te-target="#carousel" data-te-slide-to="0" data-te-carousel-active
+                        class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-te-target="#carousel" data-te-slide-to="1"
+                        class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-te-target="#carousel" data-te-slide-to="2"
+                        class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="flex w-full ml-10 items-center justify-end gap-3">
+                    <div class="w-3/6 h-0.5 rounded-full bg-primary flex items-center gap-3">
+                        <div class="w-1 h-1 bg-primary rotate-45"></div>
+                        <div class="w-2 h-2 bg-primary rotate-45"></div>
+                        <div class="w-3 h-3 bg-primary rotate-45"></div>
+                    </div>
+                    <button data-te-target="#carousel" data-te-slide="prev" type="button" class="z-30"
+                        data-carousel-prev>
+                        <img src="images/svg/ButtonLeft.svg" class="w-8 h-8 rounded-full" alt="Button left">
+                    </button>
+                    <button data-te-target="#carousel" data-te-slide="next" type="button" class="z-30"
+                        data-carousel-next>
+                        <img src="images/svg/ButtonRight.svg" class="w-8 h-8 rounded-full" alt="Button Right">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang-kami" class="bg-secondary w-full">
+        <div
+            class="max-w-screen-2xl flex flex-col lg:flex-row items-center lg:justify-between mt-12 gap-8 lg:gap-32 lg:mt-0 mx-auto py-16 px-8 md:px-24">
+            <div class="flex flex-col w-full gap-6" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-start items-center gap-8">
+                    <p class="min-w-fit	font-serif text-3xl lg:text-4xl tracking-wide leading-tight">Tentang Kami</p>
+                    <div class="w-full h-0.5 rounded-full bg-primary flex items-center justify-end gap-3">
+                        <div class="w-3 h-3 bg-primary rotate-45"></div>
+                        <div class="w-2 h-2 bg-primary rotate-45"></div>
+                        <div class="w-1 h-1 bg-primary rotate-45"></div>
+                    </div>
+                </div>
+                <p class="w-full text-sm xl:text-md font-sans leading-normal">
+                    Sejak 2005, Andinny Photo telah menjadi langganan setia warga Sumedang yang menginginkan cetakan
+                    foto berkualitas tinggi dan layanan terbaik. Selain cetak foto, kami juga menghadirkan layanan
+                    pembuatan stempel, spanduk, dan desain undangan yang sungguh unik.
+                    <br><br>
+                    Setiap klik kamera kami dirancang untuk menangkap esensi dari setiap momen berharga dalam perjalanan
+                    hidup Anda. Temui kami di Jalan Cimalaka - Tanjungkerta dan percayakan pada kami untuk mengabadikan
+                    keindahan momen-momen berharga dalam hidup Anda.
+                </p>
+            </div>
+            <div class="w-full" data-aos="fade-left">
+                <img src="/images/png/ImageTentangKami.png" class="w-full h-auto max-h-[452px]" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="jasa" class="max-w-screen-2xl flex flex-col mt-16 gap-12 md:gap-6 mx-auto py-16 px-8 md:px-24">
+        <div class="flex flex-col md:flex-row justify-start items-center w-full gap-6">
+            <div class="flex flex-col min-w-fit" data-aos="fade-right">
+                <p class="font-serif text-3xl md:text-4xl text-center md:text-start tracking-wide leading-tight">Jasa
+                </p>
+                <p class="font-sans text-sm md:text-md leading-normal">Layanan kami.</p>
+            </div>
+            <div class="w-full h-0.5 rounded-full bg-primary flex items-center justify-end gap-3" data-aos="fade-left">
+                <div class="w-3 h-3 bg-primary rotate-45"></div>
+                <div class="w-2 h-2 bg-primary rotate-45"></div>
+                <div class="w-1 h-1 bg-primary rotate-45"></div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                <div class="grid gap-4 lg:gap-6">
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Cetak Undangan.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Cetak Undangan</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Cetak Spanduk.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Cetak Spanduk</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Photo Sekolah.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Photo Sekolah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-4 lg:gap-6">
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Cetak Foto.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Cetak Foto</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Kartu Nama.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Kartu Nama</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Photo Pernikahan.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Photo Pernikahan</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Photo MDA.png" class="w-full h-auto brightness-[0.8]" alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Photo MDA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-4 lg:gap-6">
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Photo Studio.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Photo Studio</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Stempel.png" class="w-full h-auto brightness-[0.8]" alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Stempel</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden md:max-w-[486px]" data-aos="fade-up">
+                        <div class="hover:scale-125 transition-all duration-700">
+                            <img src="/images/png/services/Photo Paud.png" class="w-full h-auto brightness-[0.8]"
+                                alt="">
+                            <p
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-white font-medium text-lg text-center">
+                                Photo Paud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="max-w-screen-2xl flex flex-col mt-16 gap-12 md:gap-6 mx-auto py-16 px-8 md:px-24">
+        <div class="flex flex-col md:flex-row justify-start items-center w-full gap-6">
+            <div class="flex flex-col min-w-fit" data-aos="fade-right">
+                <p class="font-serif text-center md:text-start text-3xl md:text-4xl tracking-wide leading-tight">Galeri
+                </p>
+                <p class="font-sans text-sm md:text-md leading-normal">Hasil dari layanan kami.</p>
+            </div>
+            <div class="w-full h-0.5 rounded-full bg-primary flex items-center justify-end gap-3" data-aos="fade-left">
+                <div class="w-3 h-3 bg-primary rotate-45"></div>
+                <div class="w-2 h-2 bg-primary rotate-45"></div>
+                <div class="w-1 h-1 bg-primary rotate-45"></div>
+            </div>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row justify-between gap-4 lg:gap-6">
+            <div class="lg:max-w-[354px] grid gap-4 lg:gap-6">
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 1.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 2.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 3.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+            </div>
+            <div class="lg:max-w-[534px] grid gap-4 lg:gap-6">
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 4.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 5.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 6.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+            </div>
+            <div class="lg:max-w-[570px] grid gap-4 lg:gap-6">
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 7.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 8.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+                <div data-aos="fade-up">
+                    <img src="/images/png/gallery/Image 9.png"
+                        class="w-full h-auto brightness-[0.8] hover:brightness-100 transition-all duration-700" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary w-full h-fit lg:h-96">
+        <div
+            class="max-w-screen-2xl h-full flex flex-col lg:flex-row items-center mt-36 gap-8 mx-auto py-16 px-8 md:px-24">
+            <div class="w-full flex flex-col gap-6">
+                <p class="w-full md:w-2/3 font-serif text-3xl md:text-4xl tracking-wide leading-10">Beri kami penilaian
+                    di Google!</p>
+                <p class="w-full md:w-2/3 font-sans text-sm md:text-md leading-normal">
+                    Bantu kami meningkatkan pelayanan dengan memberi kritik dan saran juga penilaian untuk Andinny
+                    Photo.
+                </p>
+                <button type="button"
+                    class="max-w-fit font-sans bg-primary text-white hover:shadow-2xl font-medium text-md xl:text-lg px-4 py-2 text-center transition-all linear duration-700"><a
+                        target="_blank"
+                        href="https://www.google.com/maps/place/ANDINNY+PHOTO/@-6.766752,107.8982124,15z/data=!4m8!3m7!1s0x2e68d7d207440aef:0xa7779fa6768a8ad!8m2!3d-6.766752!4d107.8982124!9m1!1b1!16s%2Fg%2F11hcym47hm">Nilai
+                        Kami</a></button>
+            </div>
+            <div class="w-0.5 h-full rounded-full bg-primary gap-3">
+            </div>
+            <div id="comment" class="w-full flex flex-col items-end lg:order-1 space-y-4 lg:px-0 gap-6"
+                data-te-carousel-init data-te-ride="comment">
+                <div class="relative overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First slide-->
+                    <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item data-te-carousel-active>
+                        <p class="font-serif text-2xl text-end tracking-wide leading-tight">“Pelayanan prima hasilnya
+                            pun oke”</p>
+                        <p class="mt-2 text-sm md:text-md text-end font-sans leading-normal">
+                            - Merry Crizanova Rady
+                        </p>
+                    </div>
+                    <!--Second slide-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item>
+                        <p class="font-serif text-2xl text-end tracking-wide leading-tight">“Salah satu cetak foto
+                            populer daerah tanjungkerta”</p>
+                        <p class="mt-2 text-sm md:text-md text-end font-sans leading-normal">
+                            - Dani Rohendi
+                        </p>
+                    </div>
+                    <!--Third slide-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item>
+                        <p class="font-serif text-2xl text-end tracking-wide leading-tight">“Keperluan yang berkaitan
+                            dengan photograpy ya disini tempatnya”</p>
+                        <p class="mt-2 text-sm md:text-md text-end font-sans leading-normal">
+                            - Dadang Suherman
+                        </p>
+                    </div>
+                </div>
+                <div class="flex w-full md:w-2/3 items-center justify-end">
+                    <div class="relative z-10 flex list-none justify-center" data-te-carousel-indicators>
+                        <button type="button" data-te-target="#comment" data-te-slide-to="0" data-te-carousel-active
+                            class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-te-target="#comment" data-te-slide-to="1"
+                            class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-te-target="#comment" data-te-slide-to="2"
+                            class="mx-1 h-2 w-2 rounded-full bg-primary opacity-20 transition-opacity duration-500 ease-in-out"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="flex w-full ml-10 items-center justify-end gap-3">
+                        <div class="w-3/6 h-0.5 rounded-full bg-primary flex items-center gap-3">
+                            <div class="w-1 h-1 bg-primary rotate-45"></div>
+                            <div class="w-2 h-2 bg-primary rotate-45"></div>
+                            <div class="w-3 h-3 bg-primary rotate-45"></div>
+                        </div>
+                        <button data-te-target="#comment" data-te-slide="prev" type="button" class="z-30"
+                            data-carousel-prev>
+                            <img src="images/svg/ButtonLeft.svg" class="w-8 h-8 rounded-full" alt="Button left">
+                        </button>
+                        <button data-te-target="#comment" data-te-slide="next" type="button" class="z-30"
+                            data-carousel-next>
+                            <img src="images/svg/ButtonRight.svg" class="w-8 h-8 rounded-full" alt="Button Right">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="max-w-screen-2xl flex flex-col items-center justify-center mt-16 gap-6 mx-auto py-16 px-8 md:px-24">
+        <p class="md:w-2/3 font-serif text-3xl md:text-4xl text-center tracking-wide leading-10">Sudah waktunya<br><span
+                class="italic">Get in Touch..</span></p>
+        <p class="md:w-1/3 text-sm md:text-md text-center font-sans leading-normal">
+            Tunggu apalagi? Ayo penuhi kebutuhan, kebahagiaan dan kenanganmu di Andinny Photo!
+        </p>
+        <button type="button"
+            class="max-w-fit font-sans bg-primary text-white hover:shadow-2xl font-medium text-md xl:text-lg px-4 py-2 text-center transition-all linear duration-700"><a
+                target="_blank" href="https://wa.me/6285320835586">Hubungi
+                Kami via Whatsapp</a></button>
+    </section>
+
+    <section class="bg-secondary w-full h-fit">
+        <div class="max-w-screen-2xl h-full flex flex-col items-center mt-36 gap-8 mx-auto py-16 px-8 md:px-24">
+            <div class="flex flex-col md:flex-row justify-start items-center w-full gap-8">
+                <p class="min-w-fit font-serif text-2xl tracking-wide leading-tight">Ikuti Kami di Instagram!</p>
+                <div class="w-full h-0.5 rounded-full bg-primary flex items-center justify-end gap-3">
+                    <div class="w-3 h-3 bg-primary rotate-45"></div>
+                    <div class="w-2 h-2 bg-primary rotate-45"></div>
+                    <div class="w-1 h-1 bg-primary rotate-45"></div>
+                </div>
+                <a target="_blank" href="https://www.instagram.com/zen_andinny_photo/"
+                    class="min-w-fit font-serif text-2xl tracking-wide leading-tight">@zen_andinny_photo</a>
+            </div>
+            <a href="/index.html" class="flex items-center space-x-3 mt-8">
+                <img src="/images/svg/Logo.svg" class="h-20" alt="Andinny Photo Logo">
+            </a>
+            <ul class="flex font-normal font-sans gap-6">
+                <li>
+                    <a href="#tentang-kami"
+                        class="block py-2 px-3 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Tentang
+                        Kami</a>
+                </li>
+                <li>
+                    <a href="#jasa"
+                        class="block py-2 px-3 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Jasa</a>
+                </li>
+                <li>
+                    <a href="#galeri"
+                        class="block py-2 px-3 text-primary text-md xl:text-lg hover:font-semibold transition-all linear">Galeri</a>
+                </li>
+            </ul>
+            <a target="_blank" href="https://maps.app.goo.gl/trVvTKxwgF5PTUdU8"
+                class="text-center font-sans text-sm lg:text-md leading-normal hover:font-semibold transition-all linear">
+                No 7, Cikalong Landeuh, RT.01/RW.01, Banyuasih, Kec. Tanjungkerta, Kabupaten Sumedang, Jawa Barat
+            </a>
+            <div class="w-1/3 h-0.5 rounded-full bg-gray flex items-center justify-end gap-3"></div>
+            <p class="text-center text-sm text-gray font-sans leading-normal">
+                © 2023 Nur Zen Group. All Rights Reserved.
+            </p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
